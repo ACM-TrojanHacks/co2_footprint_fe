@@ -32,13 +32,14 @@ const WebcamComponent = () => {
     <div>
       <Webcam
         audio={false}
-        height={400}
+        height={600}
         ref={webcamRef}
         screenshotFormat="image/jpeg"
-        width={400}
+        width={600}
+        screenshotQuality={1}
         videoConstraints={{
-          width: 400,
-          height: 400,
+          width: 600,
+          height: 600,
           facingMode: { exact: 'environment' },
         }}
       />
