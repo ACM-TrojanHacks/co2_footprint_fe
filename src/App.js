@@ -1,12 +1,10 @@
 import React from 'react';
 import './App.css';
 
-function App() {
-  return (
-    <div className="App">
-      Initial
-    </div>
-  );
-}
+const App = () => (
+  <div className="App">
+    Initial
+  </div>
+);
 
 export default App;
