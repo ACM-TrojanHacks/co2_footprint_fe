@@ -53,7 +53,6 @@ const WebcamComponent = (props) => {
         if (result.data.msg) {
           const { min, max } = result.data.msg;
           if (min !== Infinity && max !== -Infinity) {
-            console.log(result.data);
             const tempArr = [];
             tempArr.push((min * 100) / 24);
             tempArr.push((max * 100) / 24);
