@@ -1,0 +1,8 @@
+.Webcam {
+    display: flex;
+    flex-direction: column;
+}
+
+.Slider {
+    padding: 1em;
+}

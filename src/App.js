@@ -1,11 +1,16 @@
-import React from 'react';
+import React, { useState } from 'react';
 import './App.css';
-import WebcamComponent from './Components/Webcam';
+import Summary from './Components/Summary/Summary';
+import WebcamComponent from './Components/Webcam/Webcam';
 
-const App = () => (
-  <div className="App">
-    <WebcamComponent />
-  </div>
-);
+const App = () => {
+  const [isWebcamPage, setIsWebcamPage] = useState(true);
+  return (
+    <div className="App">
+      {isWebcamPage && <WebcamComponent setIsWebcamPage={setIsWebcamPage} />}
+      {!isWebcamPage && <Summary setIsWebcamPage={setIsWebcamPage} />}
+    </div>
+  );
+};
 
 export default App;

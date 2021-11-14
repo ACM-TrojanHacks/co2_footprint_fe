@@ -1,0 +1,8 @@
+.Summary {
+    display: flex;
+    flex-direction: column;
+}
+
+.Summary-heading {
+    margin-top: 1em;
+}
